@@ -10,13 +10,9 @@ class Environment
     private string $appEnv;
     private string $appHost;
 
-    public static function getInstance(): static
+    final public static function singleton(): static
     {
-        if (!isset(self::$instance)) {
-            self::$instance = new static();
-        }
-
-        return self::$instance;
+        return SingletonHelper::init(static::class);
     }
 
     public function setName(string $name): static
