@@ -7,6 +7,11 @@ Clone the repo
 git clone https://github.com/ahmard/minimal-singleton.git
 ```
 
+Navigate to the cloned repo
+```shell
+cd minimal-singleton
+```
+
 Install [Composer](https://getcomposer.org) packages
 ```shell
 composer install
